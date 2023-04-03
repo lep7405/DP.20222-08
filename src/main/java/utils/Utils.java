@@ -15,7 +15,7 @@ import java.util.logging.Logger;
  */
 public class Utils {
 
-	public static DateFormat DATE_FORMATTER = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+    private static final DateFormat DATE_FORMATTER = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 	private static Logger LOGGER = getLogger(Utils.class.getName());
 	static {
 		System.setProperty("java.util.logging.SimpleFormatter.format", "[%4$-4s] [%1$tF %1$tT] [%2$-7s] %5$s %n");
@@ -24,5 +24,9 @@ public class Utils {
 	public static Logger getLogger(String className) {
 		return Logger.getLogger(className);
 	}
+	
+	public static DateFormat getDateFormatter() {
+        return DATE_FORMATTER;
+    }
 
 }
