@@ -60,6 +60,7 @@ public class PlaceOrderController extends BaseController {
      * @throws InterruptedException
      * @throws IOException
      */
+    /*stamp coupling do không dùng hêt thuộc tính của info và đưa ra 1 cấu trúc dữ liệu thừa*/
     public DeliveryInfo processDeliveryInfo(HashMap info) throws InterruptedException, IOException, InvalidDeliveryInfoException {
         LOGGER.info("Process Delivery Info");
         LOGGER.info(info.toString());
