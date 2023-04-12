@@ -11,8 +11,8 @@ public class CartItem {
     public CartItem(){
 
     }
-
-    public CartItem(Media media, Cart cart, int quantity, int price) {
+// stamp coupling 
+    public CartItem(Media media,Cart cart, int quantity, int price) {
         this.media = media;
         this.quantity = quantity;
         this.price = price;
